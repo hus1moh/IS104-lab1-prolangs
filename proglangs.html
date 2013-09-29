@@ -13,20 +13,18 @@
  <title>Programmeringsspråk (versjon 0.0.1)</title>
  
  <!-- Laste inn Javascript biblioteker her 
- Fjern kommentarmerkene for å inkludere jquery biblioteket (sist hentet 23.08.2013) -->
+ Fjern kommentarmerkene for å inkludere jquery biblioteket (sist hentet 23.08.2013) 
+ link for ekstern fil for javascript -->
  <script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+ <SCRIPT SRC="proglangs.js">
+</SCRIPT>
+ 
 
  
  <!-- Inkludere CSS her -->
   Lister med programmeringspråk
  <link rel="stylesheet" href="proglangs.css" type="text/css" media="all" />
- <script>
-function programmering()
-{
-var mylist=document.getElementById("myList");
-document.getElementById("favorite").value=mylist.options[mylist.selectedIndex].text;
-}
-</script>
+
 
  
 </head>
@@ -81,28 +79,28 @@ document.getElementById("favorite").value=mylist.options[mylist.selectedIndex].t
   <option value="">Ruby></option>
 </select><b></b><br>
 <b>Velg programmeringspråk</b>
-<select id="myList" onchange="programmering()">
-  <option></option>
-  <option id="farge">AppleScript</option>
-  <option id="farge">Asp</option>
-  <option id="farge">Basic</option>
-  <option id="farge">C</option>
-  <option id="farge">C++</option>
-  <option id="farge1">Clojure</option>
-  <option id="farge1">Cobol</option>
-  <option id="farge1">Coldfusion</option>
-  <option id="farge1">Erlang</option>
-  <option id="farge1">Fortrean</option>
-  <option id="farge1">Groovy</option>
-  <option id="farge2">Haskell</option>
-  <option id="farge2">Java</option>
-  <option id="farge2">JavaScript</option>
-  <option id="farge2">Lisp</option>
-  <option id="farge3">Perl</option>
-  <option id="farge3">PHP</option>
-  <option id="farge3">Python</option>
-  <option id="farge3">Ruby</option>
-</select>
-<span>Følgende programmeringspråk er valgt >>: <input type="text" id="favorite" size="20"></span>
+<form> 
+<select id="whatever" onChange="changeText('whatever');"> 
+<option value="0">Select</option> 
+<option value="1">AppleScript</option> 
+<option value="2">Asp</option> 
+<option value="3">Basic</option> 
+<option value="4">C</option> 
+<option value="5">C++</option> 
+<option value="6">Clojure</option>
+<option value="7">Cobol</option> 
+<option value="8">Coldfusion</option> 
+<option value="9">Erlang</option> 
+<option value="10">Fortrean</option> 
+<option value="11">Haskell</option> 
+<option value="12">Java</option> 
+<option value="13">Javascript</option> 
+<option value="14">Lisp</option> 
+<option value="15">Perl</option> 
+<option value="16">Python</option> 
+<option value="17">Ruby</option>  
+</select><br> 
+</form> 
+<span  output id="text">Du har ennå ikke valgt programmeringsspråk </span> 
 </body>
 </html>
